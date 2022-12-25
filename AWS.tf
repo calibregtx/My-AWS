@@ -19,8 +19,8 @@ provider "aws" {
 #  tags = {
 #    Name = "RA_VPC"
 
-  }
-}
+#  }
+#}
 
 # EC2
 # resource "aws_instance" "Randy_web" {
