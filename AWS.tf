@@ -15,13 +15,12 @@ provider "aws" {
 
 
 
-# resource "aws_default_vpc" "RA_VPC" {
-#   tags = {
+#  resource "aws_default_vpc" "RA_VPC" {
+#    tags = {
 #     Name = "RA_VPC"
-
+#   }
 #  }
-# }
-
+#}
 # EC2
 # resource "aws_instance" "Randy_web" {
 #   ami           = "ami-0bba69335379e17f8"
