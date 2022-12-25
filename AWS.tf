@@ -20,7 +20,7 @@ resource "aws_default_vpc" "RA_VPC" {
     Name = "RA_VPC"
 
  }
-#}
+}
 
 # EC2
 # resource "aws_instance" "Randy_web" {
