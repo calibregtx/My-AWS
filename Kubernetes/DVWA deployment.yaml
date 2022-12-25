@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dvwa-deployment
+  labels:
+   app: dvwa-label
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dvwa-label
+  template:
+    metadata:
+      labels:
+        app: dvwa-label
+    spec:
+      containers:
+      - name: dvwa
+        image: vulnerables/web-dvwa
+        ports:
+        - containerPort: 80
+          AllowPrivilegeEscalation: False
