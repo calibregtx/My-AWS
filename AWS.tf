@@ -19,7 +19,7 @@ resource "aws_default_vpc" "RA_VPC" {
   tags = {
     Name = "RA_VPC"
 
-#  }
+ }
 #}
 
 # EC2
