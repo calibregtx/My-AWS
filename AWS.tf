@@ -15,9 +15,9 @@ provider "aws" {
 
 
 
-resource "aws_vpc" "RA_VPC" {
+resource "aws_vpc" "Randy_VPC" {
   tags = {
-    Name = "RA_VPC"
+    Name = "Randy_VPC"
    }
   }
 
@@ -30,9 +30,5 @@ resource "aws_instance" "Randy_web" {
 }
 
 
-resource "aws_lb" "RA_GWLB" {
-  name = "RAGWLB"
-  load_balancer_type = "gateway"
-  
-}
+#
 
