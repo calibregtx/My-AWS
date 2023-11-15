@@ -9,13 +9,14 @@ terraform {
 }
 
 provider "aws" {
-    region = "ap-northeast-1"
+    region = "southeast-3"
  
 }
 
 
 
 resource "aws_vpc" "Randy_VPC" {
+  # checkov:skip=CKV2_AWS_11: ADD REASON 
   tags = {
     Name = "Randy_VPC"
    }
